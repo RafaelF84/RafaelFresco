@@ -26,7 +26,7 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-4">About Me</h2>
       <p class="text-lg mb-6">Olá! Sou o Rafael, estudante de Engenharia Informática na Universidade de Trás-os-Montes e Alto Douro, com interesse em redes, cibersegurança e desenvolvimento fullstack. Tenho experiência em Python, C++, C#, Java e HTML. Participei do UTAD Summit e trabalhei em manutenção na CORIND Green Engineering Solutions e na BMRS Composites.</p>
-      <img src="assets/images/minha-foto.jpg"  class="mx-auto rounded-full w-52 shadow-md">
+      <img src="assets/photos/mypfp.jpg"  class="mx-auto rounded-full w-52 shadow-md">
     </div>
   </section>
 
@@ -92,23 +92,7 @@
     <p class="text-gray-600">&copy; 2025 Rafael Santos Fresco. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Scroll animation script -->
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('opacity-0', 'translate-y-10');
-          entry.target.classList.add('opacity-100', 'translate-y-0');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll('.animate-on-scroll').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
+<script src="script.js"></script>
 </body>
 
 </html>
