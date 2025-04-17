@@ -1,101 +1,114 @@
-<!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Rafael Santos Fresco</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Santos Fresco - Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1>Rafael Santos Fresco</h1>
-            <p>Web Developer | Networking | Cybersecurity</p>
-            <nav>
-                <a href="#sobre">Sobre Mim</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-md py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Rafael Santos Fresco</h1>
+      <nav class="space-x-6">
+        <a href="#sobre" class="hover:text-blue-500 transition duration-300">About</a>
+        <a href="#projetos" class="hover:text-blue-500 transition duration-300">Projects</a>
+        <a href="#habilidades" class="hover:text-blue-500 transition duration-300">Skills</a>
+        <a href="#contacto" class="hover:text-blue-500 transition duration-300">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="py-16 text-center bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg mb-6">Olá! Sou o Rafael, estudante de Engenharia Informática na Universidade de Trás-os-Montes e Alto Douro, com interesse em redes, cibersegurança e desenvolvimento fullstack. Tenho experiência em Python, C++, C#, Java e HTML. Participei do UTAD Summit e trabalhei em manutenção na CORIND Green Engineering Solutions e na BMRS Composites.</p>
+      <img src="assets/images/minha-foto.jpg" alt="Minha Foto" class="mx-auto rounded-full w-52 shadow-md">
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Portal de Gestão de Biblioteca</h3>
+          <p class="text-gray-700 mb-4">Aplicação completa em C# para gestão de bibliotecas, com funcionalidades CRUD e base de dados.</p>
+          <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">Ver Projeto</a>
         </div>
-    </header>
-
-    <!-- Seção Sobre Mim -->
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Sou o Rafael, estudante de Engenharia Informática com paixão por desenvolvimento web. Estou constantemente a aprender novas tecnologias para criar soluções inovadoras.</p>
-            <img src="assets/images/minha-foto.jpg" alt="Minha Foto" width="250">
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Sistema de Monitorização de Redes</h3>
+          <p class="text-gray-700 mb-4">Ferramenta para análise de tráfego e deteção de intrusões, desenvolvida em Python.</p>
+          <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">Ver Projeto</a>
         </div>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="project-card">
-                <h3>Projeto 1</h3>
-                <p>Descrição do projeto 1. Fala sobre o que fizeste, as tecnologias usadas e o impacto do projeto.</p>
-                <a href="#" class="btn">Ver Projeto</a>
-            </div>
-            <div class="project-card">
-                <h3>Projeto 2</h3>
-                <p>Descrição do projeto 2. Fala sobre o que fizeste, as tecnologias usadas e o impacto do projeto.</p>
-                <a href="#" class="btn">Ver Projeto</a>
-            </div>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Website Pessoal</h3>
+          <p class="text-gray-700 mb-4">Portfólio online com HTML, Tailwind e interações modernas.</p>
+          <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">Ver Projeto</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção Habilidades -->
-    <section id="habilidades">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Habilidades -->
+  <section id="habilidades" class="py-16 bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Python</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">C++</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">C#</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Java</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Redes</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Cibersegurança</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Fullstack Dev</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção de Contacto -->
-    <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>Entre em contacto comigo através do LinkedIn ou e-mail.</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/rafael-fresco-87136b310/" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:rafaasfrescoo@gmail.com">E-mail</a></li>
-            </ul>
-        </div>
-    </section>
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contacts</h2>
+      <p class="text-lg mb-4">Aberto a oportunidades na área de informática. Entre em contacto para discutir colaborações ou propostas!</p>
+      <ul class="space-y-4">
+        <li>
+          <a href="https://www.linkedin.com/in/rafael-fresco-87136b310/" target="_blank" class="text-blue-600 font-semibold hover:underline">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:rafaasfrescoo@gmail.com" class="text-blue-600 font-semibold hover:underline">E-mail</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Rafael Santos Fresco. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-white py-6 mt-12 text-center">
+    <p class="text-gray-600">&copy; 2025 Rafael Santos Fresco. Todos os direitos reservados.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- Scroll animation script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
+
 </html>
