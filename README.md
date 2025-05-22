@@ -1,7 +1,7 @@
 # Rafael Santos Fresco
 
 🎓 Bachelor's degree in Computer Engineering  
-💻 Passionate about Web Development, Networking, and Cybersecurity  
+💻 Passionate about Web Development and  Networking
 📍 Ílhavo, Aveiro | 🇵🇹
 
 ## 🚀 Currently Learning
