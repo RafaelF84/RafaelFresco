@@ -13,18 +13,18 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-center">
       <h1 class="text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">Rafael Santos Fresco</h1>
       <!-- Hamburger Button (visible on mobile) -->
-      <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-blue-500 border-blue-500 focus:outline-none">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
+      <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-600 transition relative z-50 focus:outline-none">
+        <span class="block w-6 h-0.5 bg-white mb-1 transition-all duration-300" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-white mb-1 transition-all duration-300" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300" id="bar3"></span>
       </button>
       <!-- Navigation Links -->
-      <nav id="menu" class="absolute top-20 left-0 w-full bg-white shadow-lg flex-col items-center space-y-4 py-6 z-50 hidden md:static md:w-auto md:bg-transparent md:shadow-none md:flex md:flex-row md:space-y-0 md:space-x-6 md:py-0 transition-all duration-300">
-        <a href="#sobre" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">About</a>
-        <a href="#projetos" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Projects</a>
-        <a href="#habilidades" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Skills</a>
-        <a href="#contacto" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Contacts</a>
-        <a href="#curriculum" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Curriculum</a>
+      <nav id="menu" class="fixed inset-0 bg-white bg-opacity-95 flex-col items-center justify-center space-y-8 text-center text-2xl font-bold text-blue-700 z-40 hidden md:static md:w-auto md:bg-transparent md:shadow-none md:flex md:flex-row md:space-y-0 md:space-x-6 md:py-0 transition-all duration-300">
+        <a href="#sobre" class="hover:text-blue-500 transition">About</a>
+        <a href="#projetos" class="hover:text-blue-500 transition">Projects</a>
+        <a href="#habilidades" class="hover:text-blue-500 transition">Skills</a>
+        <a href="#contacto" class="hover:text-blue-500 transition">Contacts</a>
+        <a href="#curriculum" class="hover:text-blue-500 transition">Curriculum</a>
       </nav>
     </div>
   </header>
