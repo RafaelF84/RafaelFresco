@@ -9,7 +9,7 @@
 
 <body class="bg-gray-100 text-gray-900">
   <!-- Header -->
-  <header class="bg-white shadow-md py-6">
+  <header class="bg-white shadow-md py-6 relative">
     <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-center">
       <h1 class="text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">Rafael Santos Fresco</h1>
       <!-- Hamburger Button (visible on mobile) -->
@@ -19,25 +19,15 @@
         </svg>
       </button>
       <!-- Navigation Links -->
-      <nav id="menu" class="flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center hidden md:flex">
-        <a href="#sobre" class="hover:text-blue-500 transition duration-300">About</a>
-        <a href="#projetos" class="hover:text-blue-500 transition duration-300">Projects</a>
-        <a href="#habilidades" class="hover:text-blue-500 transition duration-300">Skills</a>
-        <a href="#contacto" class="hover:text-blue-500 transition duration-300">Contacts</a>
-        <a href="#curriculum" class="hover:text-blue-500 transition duration-300">Curriculum</a>
+      <nav id="menu" class="absolute top-20 left-0 w-full bg-white shadow-lg flex-col items-center space-y-4 py-6 z-50 hidden md:static md:w-auto md:bg-transparent md:shadow-none md:flex md:flex-row md:space-y-0 md:space-x-6 md:py-0 transition-all duration-300">
+        <a href="#sobre" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">About</a>
+        <a href="#projetos" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Projects</a>
+        <a href="#habilidades" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Skills</a>
+        <a href="#contacto" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Contacts</a>
+        <a href="#curriculum" class="block text-lg font-semibold text-gray-800 hover:text-blue-500 transition">Curriculum</a>
       </nav>
     </div>
   </header>
-
-  <script>
-    // Simple hamburger menu toggle
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-    });
-  </script>
 
   <!-- About me  -->
   <section id="sobre" class="py-10 sm:py-16 text-center bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
