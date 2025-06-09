@@ -19,7 +19,7 @@
         </svg>
       </button>
       <!-- Navigation Links -->
-      <nav id="menu" class="flex-col md:flex-row md:flex space-y-2 md:space-y-0 md:space-x-6 items-center hidden md:flex">
+      <nav id="menu" class="flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center hidden md:flex">
         <a href="#sobre" class="hover:text-blue-500 transition duration-300">About</a>
         <a href="#projetos" class="hover:text-blue-500 transition duration-300">Projects</a>
         <a href="#habilidades" class="hover:text-blue-500 transition duration-300">Skills</a>
@@ -35,6 +35,7 @@
     const menu = document.getElementById('menu');
     btn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
     });
   </script>
 
@@ -125,8 +126,6 @@
   <footer class="bg-white py-6 mt-12 text-center">
     <p class="text-gray-600 text-sm sm:text-base">&copy; 2025 Rafael Santos Fresco. All rights reserved.</p>
   </footer>
-
-<script src="script.js"></script>
 </body>
 
 </html>
