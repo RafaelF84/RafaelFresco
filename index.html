@@ -9,86 +9,79 @@
 
 <body class="bg-gray-100 text-gray-900">
   <!-- Header -->
-  <header class="bg-white shadow-md py-6 relative">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-center">
-      <h1 class="text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">Rafael Santos Fresco</h1>
-      <!-- Hamburger Button (visible on mobile) -->
-      <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-600 transition relative z-50 focus:outline-none">
-        <span id="bar1" class="block w-6 h-0.5 bg-white mb-1 transition-all duration-300"></span>
-        <span id="bar2" class="block w-6 h-0.5 bg-white mb-1 transition-all duration-300"></span>
-        <span id="bar3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
-      </button>
-      <!-- Navigation Links -->
-      <nav id="menu" class="fixed inset-0 bg-white bg-opacity-95 flex-col items-center justify-center space-y-8 text-center text-2xl font-bold text-blue-700 z-40 hidden md:static md:w-auto md:bg-transparent md:shadow-none md:flex md:flex-row md:space-y-0 md:space-x-6 md:py-0 transition-all duration-300">
-        <a href="#sobre" class="hover:text-blue-500 transition">About</a>
-        <a href="#projetos" class="hover:text-blue-500 transition">Projects</a>
-        <a href="#habilidades" class="hover:text-blue-500 transition">Skills</a>
-        <a href="#contacto" class="hover:text-blue-500 transition">Contacts</a>
-        <a href="#curriculum" class="hover:text-blue-500 transition">Curriculum</a>
+  <header class="bg-white shadow-md py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Rafael Santos Fresco</h1>
+      <nav class="space-x-6 flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 items-center">
+        <a href="#sobre" class="hover:text-blue-500 transition duration-300">About</a>
+        <a href="#projetos" class="hover:text-blue-500 transition duration-300">Projects</a>
+        <a href="#habilidades" class="hover:text-blue-500 transition duration-300">Skills</a>
+        <a href="#contacto" class="hover:text-blue-500 transition duration-300">Contacts</a>
+        <a href="#curriculum" class="hover:text-blue-500 transition duration-300">Curriculum</a>
       </nav>
     </div>
   </header>
 
   <!-- About me  -->
-  <section id="sobre" class="py-10 sm:py-16 text-center bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-base sm:text-lg mb-6">Hello! I'm Rafael, a Computer Engineering student at the University of Trás-os-Montes e Alto Douro, interested in networks, cybersecurity, and fullstack development. I have experience with Python, C++, C#, Java, and HTML. I participated in the UTAD Summit and worked in maintenance at CORIND Green Engineering Solutions and BMRS Composites.</p>
-      <img src="assets/photos/mypfp.jpg" class="mx-auto rounded-full w-32 sm:w-52 shadow-md">
+  <section id="sobre" class="py-16 text-center bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg mb-6">Hello! I'm Rafael, a Computer Engineering student at the University of Trás-os-Montes e Alto Douro, interested in networks, cybersecurity, and fullstack development. I have experience with Python, C++, C#, Java, and HTML. I participated in the UTAD Summit and worked in maintenance at CORIND Green Engineering Solutions and BMRS Composites.</p>
+      <img src="assets/photos/mypfp.jpg"  class="mx-auto rounded-full w-52 shadow-md">
     </div>
   </section>
 
   <!-- Projects  -->
-  <section id="projetos" class="py-10 sm:py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Projects</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8">
-        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 text-center">
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Simple Projects</h3>
-          <p class="text-gray-700 mb-4 text-sm sm:text-base">A collection of simple projects and code samples from my GitHub repository.</p>
-          <a href="https://github.com/RafaelF84/Simple_Projects" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300 text-sm sm:text-base">View Project</a>
+  <section id="projetos" class="py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Simple Projects</h3>
+          <p class="text-gray-700 mb-4">A collection of simple projects and code samples from my GitHub repository.</p>
+          <a href="https://github.com/RafaelF84/Simple_Projects" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">View Project</a>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 text-center">
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Medium Projects</h3>
-          <p class="text-gray-700 mb-4 text-sm sm:text-base">A selection of mid-level and more challenging projects from my GitHub repository.</p>
-          <a href="https://github.com/rafaasfrescoo/mid-projects" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300 text-sm sm:text-base">View Project</a>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Medium Projects</h3>
+          <p class="text-gray-700 mb-4">A selection of mid-level and more challenging projects from my GitHub repository.</p>
+          <a href="https://github.com/rafaasfrescoo/mid-projects" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">View Project</a>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 text-center">
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Personal Website</h3>
-          <p class="text-gray-700 mb-4 text-sm sm:text-base">Online portfolio built with HTML, Tailwind, and modern interactions.</p>
-          <a href="https://github.com/RafaelF84/RafaelFresco" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300 text-sm sm:text-base">View Project</a>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Personal Website</h3>
+          <p class="text-gray-700 mb-4">Online portfolio built with HTML, Tailwind, and modern interactions.</p>
+          <a href="https://github.com/RafaelF84/RafaelFresco" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transform hover:scale-105 transition duration-300">View Project</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- skills -->
-  <section id="habilidades" class="py-10 sm:py-16 bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12">Skills</h2>
-      <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6">
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">Python</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">C++</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">C#</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">Java</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">HTML</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">Networks</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">Cybersecurity</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-2 rounded-full font-medium text-sm sm:text-base">Fullstack Dev</span>
+  <section id="habilidades" class="py-16 bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Python</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">C++</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">C#</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Java</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">HTML</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Networks</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Cybersecurity</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Fullstack Dev</span>
       </div>
     </div>
   </section>
 
   <!-- Contacts -->
-  <section id="contacto" class="py-10 sm:py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Contacts</h2>
-      <p class="text-base sm:text-lg mb-4">Open to opportunities in the IT field. Get in touch to discuss collaborations or proposals!</p>
+  <section id="contacto" class="py-16 bg-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contacts</h2>
+      <p class="text-lg mb-4">Open to opportunities in the IT field. Get in touch to discuss collaborations or proposals!</p>
       <form action="https://formspree.io/f/mgvyanya" method="POST" class="space-y-4 mb-8">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded text-sm sm:text-base">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded text-sm sm:text-base">
-        <textarea name="message" placeholder="Your Message" required class="w-full px-4 py-2 border rounded text-sm sm:text-base"></textarea>
-        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition text-sm sm:text-base">Send</button>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded">
+        <textarea name="message" placeholder="Your Message" required class="w-full px-4 py-2 border rounded"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">Send</button>
       </form>
       <ul class="space-y-4">
         <li>
@@ -102,11 +95,11 @@
   </section>
 
   <!-- Curriculum Download -->
-  <section id="curriculum" class="py-10 sm:py-16 bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Curriculum</h2>
-      <p class="text-base sm:text-lg mb-4">Download my latest CV to learn more about my experience and skills.</p>
-      <a href="assets/RafaelFrescoCV.pdf" download class="inline-block bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600 transition duration-300 font-semibold text-sm sm:text-base">
+  <section id="curriculum" class="py-16 bg-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out animate-on-scroll">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Curriculum</h2>
+      <p class="text-lg mb-4">Download my latest CV to learn more about my experience and skills.</p>
+      <a href="assets/RafaelFrescoCV.pdf" download class="inline-block bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600 transition duration-300 font-semibold">
         Download CV
       </a>
     </div>
@@ -114,8 +107,10 @@
 
   <!-- Footer -->
   <footer class="bg-white py-6 mt-12 text-center">
-    <p class="text-gray-600 text-sm sm:text-base">&copy; 2025 Rafael Santos Fresco. All rights reserved.</p>
+    <p class="text-gray-600">&copy; 2025 Rafael Santos Fresco. All rights reserved.</p>
   </footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -24,12 +24,3 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.animate-on-scroll').forEach(section => {
     observer.observe(section);
 });
-
-// Modern hamburger menu toggle with animation
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
-btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('flex');
-    btn.classList.toggle('menu-x');
-});
