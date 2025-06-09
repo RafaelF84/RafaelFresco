@@ -31,4 +31,5 @@ const menu = document.getElementById('menu');
 btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
+    btn.classList.toggle('menu-x');
 });
